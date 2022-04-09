@@ -46,8 +46,9 @@ class MainActivity : AppCompatActivity() {
                 binding.etCalories.text?.clear()
                 binding.etRunDistance.text?.clear()
                 binding.etSwimDistance.text?.clear()
-            } else {
                 Toast.makeText(this, "მონაცემები შეინახა წარმატებით", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "fill all fields!", Toast.LENGTH_SHORT).show()
             }
         }
     }
