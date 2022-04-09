@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun init() {
         binding.btnSave.setOnClickListener {
-            val calories = binding.etCalories.text
-            val run = binding.etRunDistance.text
-            val swim = binding.etSwimDistance.text
+            val calories = binding.etCalories.text?.trim()
+            val run = binding.etRunDistance.text?.trim()
+            val swim = binding.etSwimDistance.text?.trim()
             if (!calories.isNullOrEmpty() && !run.isNullOrEmpty() && !swim.isNullOrEmpty()) {
                 CoroutineScope(IO).launch {
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 binding.etSwimDistance.text?.clear()
                 Toast.makeText(this, "მონაცემები შეინახა წარმატებით", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "fill all fields!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "შეავსეთ ყველა ველი!", Toast.LENGTH_SHORT).show()
             }
         }
     }
