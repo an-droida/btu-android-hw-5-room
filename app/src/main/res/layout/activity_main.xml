@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etRunDistance"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="60dp"
+        android:hint="გარბენილი მანძილი"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etSwimDistance"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginVertical="30dp"
+        android:hint="გაცურული მანძილი"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="მიღებული კალორია"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#0488BC"
+        android:text="შენახვა"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:text="საშუალო შედეგი სირბილში:" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgSwim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="საშუალო შედეგი ცურვაში:" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="მიღებული კალორიების საშუალო:" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotalRunningDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="სულ გარბენილი მანძილი:" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
